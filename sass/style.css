@@ -1139,8 +1139,7 @@ form input[type="submit"], form button, form input[type="reset"] {
   text-align: center; }
   .branding .logo {
     margin-bottom: 10px;
-    width: 100px;
-    height: 100px; }
+    width: 100px; }
   .branding .site-title {
     color: #8f7655;
     font-size: 14px;

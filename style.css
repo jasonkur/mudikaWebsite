@@ -183,6 +183,8 @@ input[type="radio"] {
 
 input[type="search"] {
   -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
 input[type="search"]::-webkit-search-cancel-button,
@@ -262,7 +264,6 @@ form input[type="submit"], form button, form input[type="reset"] {
 .button, form input[type="submit"], form button, form input[type="reset"] {
   display: inline-block;
   background: #e2caae;
-  background: -webkit-linear-gradient(#e2caae, #c39f70);
   background: linear-gradient(#e2caae, #c39f70);
   border-bottom: 1px solid #a68861;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
@@ -276,7 +277,6 @@ form input[type="submit"], form button, form input[type="reset"] {
   line-height: normal; }
   .button.secondary, form input.secondary[type="submit"], form button.secondary, form input.secondary[type="reset"] {
     background: #e3dfda;
-    background: -webkit-linear-gradient(#e3dfda, #d0cbc4);
     background: linear-gradient(#e3dfda, #d0cbc4);
     border-bottom: 1px solid #b1aea8;
     color: #7c7975; }
@@ -1138,7 +1138,8 @@ form input[type="submit"], form button, form input[type="reset"] {
 .branding {
   text-align: center; }
   .branding .logo {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    width: 100px; }
   .branding .site-title {
     color: #8f7655;
     font-size: 14px;
@@ -1174,8 +1175,7 @@ form input[type="submit"], form button, form input[type="reset"] {
         font-size: 18px;
         font-size: 1.2857142857em;
         border-bottom: 1px solid #e5e5e5;
-        -webkit-transition: .3s ease;
-                transition: .3s ease; }
+        transition: .3s ease; }
         .main-navigation .menu .menu-item a small {
           display: block;
           color: #a59e95;
@@ -1464,8 +1464,7 @@ form input[type="submit"], form button, form input[type="reset"] {
     .arrow li a {
       display: block;
       color: #89837c;
-      -webkit-transition: .3s ease;
-              transition: .3s ease; }
+      transition: .3s ease; }
       .arrow li a:hover {
         color: #8f7655; }
 
@@ -1510,3 +1509,5 @@ ul.bullet {
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.2); }
 .contact-form textarea {
   min-height: 150px; }
+
+/*# sourceMappingURL=style.css.map */
